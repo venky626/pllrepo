@@ -13,13 +13,13 @@
       "type": "String",
       "minLength": 1
     },
-    "repoURL": {
-      "type": "string",
-      "defaultValue": "https://venky626:5f167c8856629b90b3d807f918db1110b9053981@github.com/techdata-cloudautomation/OSPC.git",
-      "metadata": {
-        "description": "The URL for the GitHub repository that contains the project to deploy."
-      }
-    },
+    //"repoURL": {
+    //  "type": "string",
+    //  "defaultValue": "https://venky626:5f167c8856629b90b3d807f918db1110b9053981@github.com/techdata-cloudautomation/OSPC.git",
+    //  "metadata": {
+    //    "description": "The URL for the GitHub repository that contains the project to deploy."
+    //  }
+    //},
 	"accessToken": {
       "type": "string",
       "metadata": {
@@ -87,7 +87,8 @@
         "description": "This is the slot for the resellerName"
       },
 	  "minLength": 1
-    },
+    }
+	//,
 	//"storageURL": {
     //  "type": "string",
     //  "defaultValue": "https://stagee56e234631d34429ad7.blob.core.windows.net/dbdacpac/pwadb.bacpac?sp=r&st=2018-06-15T21:59:19Z&se=2019-06-08T05:59:19Z&spr=https&sv=2017-11-09&sig=rBHuArzy%2B4yXTlLxuYhrDzvfKx2qQbwumgV1GDxIArQ%3D&sr=b",
@@ -95,13 +96,13 @@
     //    "description": "The URL for the GitHub repository that contains the project to deploy."
     //  }
     //},
-    "branch": {
-      "type": "string",
-      "defaultValue": "master",
-      "metadata": {
-        "description": "The branch of the GitHub repository to use."
-      }
-    }
+    //"branch": {
+    //  "type": "string",
+    //  "defaultValue": "master",
+    //  "metadata": {
+     //   "description": "The branch of the GitHub repository to use."
+     // }
+    //}
   },
   "variables": {
     "webSiteName": "[toLower(parameters('siteName'))]",
